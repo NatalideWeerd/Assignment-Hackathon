@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Navbar */ 
+
+nav {
+  width: 100;
+  background-color: #f72585;
+  display: flex;
+  justify-content: space-between;
+  align-items: 15px 100px;
+  padding: 10px 100px;
+}
+
+.logo {
+  font-size: 25px;
+  color: #fff;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-right: 40px;
+}
+
+ul li {
+  list-style: none;
+  padding:  0px 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  transition: 0.5s ease;
+}
+
+ul li a:hover {
+  color: #484872;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+/* Header */
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./img/dogsa.jpg);
+  background-position: bottom;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content {
+  margin-bottom: 150px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.header-content h2 {
+  font-size: 4vmin;
+}
+
+.line {
+  width: 300px;
+  height: 4px;
+  background-color: #fc036b;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.button {
+  padding: 8px 15px;
+  background-color: #fc036b;
+  border-radius: 30px;
+  color: whitesmoke;
+  text-decoration: none;
+  }
+
+
+  /* Exhibitions */
+
+  .events {
+    width: 100%;
+  }
+
+  .events-container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .rows {
+    width: 60%;
+    margin: auto;
+  }
+
+  .title-events {
+    text-align: center;
+    margin-top: 75px;
+  }
+
+  .title-events h1 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #484872;
+  }
+  
+
+  .event-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+
+  .card-event {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  .img-section img {
+    height: 25em;
+    width: auto;
+    display: flex;
+    border-radius: 10%;
+    border: 6px solid #fff;
+  }
+
+  .event-content{
+    width: 100%;
+    text-align: center;
+  }
+
+  .event-content h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color: #484872;
+  }
+
+  .event-content p {
+    font-size: 15px;
+    margin: 16px 0px;
+    padding-bottom: 6%;
+    line-height: 1.5;
+    color: #6c6c6c;
+  }
+
+  @media screen and (max-width: 900px) {
+    .events .events-container .event-card {
+  
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .events .events-container .event-cards {
+  
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+  /* Footer */
+
+  .footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 5px 25px;
+    margin-top: 100px;
+    background: #f72585;
+    text-align: center;
+  }
+
+  .footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+    padding: 20px auto;
+  }
+
+  /* About Us page */
+
+  .team-section {
+    width: 100%;
+    padding-top: 5%;
+  }
+
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .row {
+    width: 60%;
+    margin: auto;
+  }
+
+  .team-title {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .team-title h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #fc036b;
+  }
+
+  .team-title p {
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 3px 8px;
+    color: #a3a3a3;
+  }
+
+  .team-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+
+  .card {
+    width: 100%;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    background-color: #f3f3f3;
+    transition: 0.3s;
+  }
+
+  .image-section img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+  }
+
+  .content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content h3 {
+    font-size: 27px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color: #fc036b;
+  }
+
+  .content h4 {
+    font-size: 17px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color: #484872;
+  }
+
+  .content p {
+    font-size: 15px;
+    margin-top: 16px 0px;
+    line-height: 1.5;
+    color: #6c6c6c;
+  }
+
+@media screen and (max-width: 900px) {
+  .team-section .container .team-card {
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team-section .container .team-card {
+
+    grid-template-columns: 1fr;
+  }
+}
+
+
+ /* Contact Us page */
+
+.contact-body {
+  width: 100%;
+  min-height: 100vh;
+  background: url(./img/food.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-us {
+  width: 85%;
+  max-width: 600px;
+  background: whitesmoke;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 40px;
+  border-radius: 15px;
+}
+
+.form{
+  border: 1px solid #a9a9a9;
+  margin: 7px 0px;
+  padding: 4px 20px;
+  border-radius: 8px;
+}
+
+.contact-us h1 {
+  font-weight: 700;
+  margin-top: 0px;
+  color: #fc036b;
+  text-decoration: underline ;
+}
+
+.form label {
+  font-size: 13px;
+  color: #fc036b;
+  text-align: left;
+  text-transform: uppercase;
+  display: block;
+}
+
+.form input, .form textarea {
+  width: 100%;
+  font-size: 19px;
+  margin-top: 5px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.button-contact {
+  width: 100%;
+  font-size: 18px;
+  color: whitesmoke;
+  display: inline-block;
+  background-color: #fc036b;
+  padding: 14px 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 30px;
+  margin-top: 8px;
+  cursor: pointer;
+}
